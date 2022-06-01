@@ -6,12 +6,12 @@
 requst
 {
     "email":"",
-    "senha":"",
+    "senha":""
 }
 
 response
 {
-    "id":0.
+    "id":0,
     "email":"",
     "nome":""
 }
@@ -27,7 +27,6 @@ request
     "avaliacao":0.0,
     "lancamento": "2020-10-00",
     "disponivel": true,
-    "imagem": "",
     "usuario": 0
 }
 
@@ -39,7 +38,6 @@ response
     "avaliacao":0.0,
     "lancamento": "2020-10-00",
     "disponivel": true,
-    "imagem": "",
     "usuario": 0
 }
 
