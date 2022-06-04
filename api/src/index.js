@@ -8,9 +8,13 @@ const server = express();
 server.use(cors());
 server.use(express.json()); 
 
+
+//liberar imagem resposta
+server.use('/storage/capaFilmes', express.static('storage/capaFilmes'));
+
 //configuração dos endpoints
 server.use(usuarioController);
-server.use(filmeController)
+server.use(filmeController);
 
 
 server.listen(process.env.PORT, () => console.log(`API online na porta ${process.env.PORT}`)); 

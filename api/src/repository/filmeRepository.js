@@ -11,3 +11,14 @@ export async function inserirFilme(filme){
     return filme;
 }
 
+export async function alterarImagem(image, id){
+    const comando =
+    `   UPDATE tb_filme 
+        SET img_filme       = ?
+        WHERE id_filme      = ?  `;
+        
+    const [resposta] = await con.query(comando, [image, id]);
+    return resposta.affectedRows
+    
+}
+
